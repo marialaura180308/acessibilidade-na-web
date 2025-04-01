@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', function(){
         tamanhoAtualFonte -= 0.1;
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
 
+        const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
+
+        const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
+botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
+
     });
 
     ScrollReveal().reveal('#inicio', { delay: 500 });
